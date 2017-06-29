@@ -73,9 +73,7 @@
 "use strict";
 
 
-/**
- * Created by HuoYu on 2017/6/19.
- */
+
 
 __webpack_require__(1); //同级目录记得加 ./
 __webpack_require__(4);
