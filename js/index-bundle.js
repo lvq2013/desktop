@@ -164,46 +164,7 @@ function rightMouse() {
     });
 }
 
-/*
-Global.oLi.on({
-    "mousedown":function (e) {
-        e = e || window.event;
-        e.stopPropagation();
 
-        //获取屏幕的最大值
-        let topMax = document.documentElement.clientHeight - $(this).get(0).clientHeight - 25 -40;
-        let leftMax = document.documentElement.clientWidth - $(this).get(0).clientWidth  - 25;
-
-        let that = $(this);
-
-        //获取当前位置
-        let sX = e.clientX,
-            sY = e.clientY;
-        //获取盒子初始位置
-        let sLeft = $(this).offset().left,
-            sTop = $(this).offset().top;
-        $(document).on(
-            "mousemove",function (e) {
-                e = e || window.event;
-                let nX = e.clientX,
-                    nY = e.clientY;
-                let x_ = nX - sX;
-                let y_ = nY - sY;
-
-                let x = sLeft + x_;
-                let y = sTop + y_;
-
-                x = Math.min(x , leftMax);
-                x  = Math.max(x , -25);
-                y = Math.min(y , topMax);
-                y  = Math.max(y , -25);
-
-                that.css({"left":x + "px","top":y + "px"});
-            }.bind(that)
-        );
-    },
-});
-*/
 
 $(document).on("mouseup", function () {
     $(this).off("mousemove");
